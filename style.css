@@ -1,8 +1,9 @@
-#stopwatch-display {
+* {
     font-family: 'Orbitron', sans-serif;
 }
 h1 {
     text-align: center;
+    padding: 40px;
 }
 
 ul {
