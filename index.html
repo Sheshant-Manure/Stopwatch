@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Google font Orbitron used  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS CDN ( Find the JS CDN below) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h1>Stopwatch App</h1>
+    <div class="container stopwatch">
+        <div class="row">
+            <div class="col" id="watchcontainer">
+                <div id="stopwatch-display">
+                    <span>
+                    <span id="hours">00</span> :
+                    <span id="minutes">00</span> :
+                    <span id="seconds">00</span>
+                    </span>
+                </div>
+                <ul>
+                    <li><img src="./play-buttton.png" onclick="startWatch()" class="img-fluid" alt="Responsive image"></li>
+                    <li><img src="./pause.png" onclick="pauseWatch()" class="img-fluid" alt="Responsive image"></li>
+                    <li><img src="./undo.png" onclick="resetWatch()" class="img-fluid" alt="Responsive image"></li>
+                    <li><img src="./timestamp.png" onclick="displayLaps()" class="img-fluid" alt="Responsive image"></li>
+                </ul>
+            </div>            
+            <div class="col-6">
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Lap #</th>
+                        <th scope="col">Time</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
